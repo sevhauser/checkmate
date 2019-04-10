@@ -15,7 +15,7 @@
           round
           @click="toggleMenu"
           class="cm-toolbar__menu">
-          <img class="cm-toolbar__logo" src="assets/checkmate-logo-icon.svg">
+          <img class="cm-toolbar__logo" src="statics/checkmate-logo-icon.svg">
         </q-btn>
         <q-space/>
         <q-btn

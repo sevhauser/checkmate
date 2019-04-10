@@ -1,6 +1,6 @@
 {
   "name": "checkmate",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Checklists for everything!",
   "productName": "CheckMate",
   "cordovaId": "org.cordova.quasar.app",

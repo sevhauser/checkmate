@@ -11,7 +11,7 @@
       <q-list
         dark>
         <q-item class="cm-nav__header">
-          <img src="assets/checkmate-logo.svg">
+          <img src="statics/checkmate-logo.svg">
         </q-item>
         <q-item
           v-for="(entry, index) in navEntries"
