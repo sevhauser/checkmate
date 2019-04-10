@@ -1,0 +1,161 @@
+// app global css
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i')
+@import '~src/css/ffs.variables.styl'
+
+.cm-page
+  background-color $bg-grey
+
+.cm-toolbar
+  background-color $primary
+  position fixed
+  width 100%
+  bottom 0
+  left 0
+  &__logo
+    width (32em / $body-font-size)
+  &__arrow
+    transition transform 100ms ease-in-out 10ms
+    flex 0 0
+    &--active
+      transform rotate(180deg)
+  &__fab
+    position absolute
+    top 0
+    left 50%
+    transform translate(-50%, -50%) scale(0)
+    transition transform 100ms ease-in-out
+    &--active
+      transform translate(-50%, -50%) scale(1)
+    
+
+.cm-nav-container
+  position fixed
+  display none
+  top 0
+  left 0
+  width 100%
+  height 100%
+  opacity 0
+  transition opacity 100ms ease-in-out 10ms
+  background-color rgba(0,0,0,0.5)
+  &--bg-active
+    display block
+  &--active
+    opacity 1
+    animation naveenter 200ms
+
+.cm-nav
+  position fixed
+  bottom -100%;
+  left 0
+  width: 100%
+  transition bottom 200ms ease-in
+  background-color $primary-dark
+  padding-bottom 50px
+  border-radius 8px
+  &--active
+    bottom 0
+  &__header
+    justify-content center
+    & img
+      width (120em / $body-font-size)
+  & .q-router-link--active
+    color $white
+  & .q-router-link--exact-active
+    color $accent
+    font-weight bold
+
+.cm-filter
+  &__chips
+    display flex
+    flex-flow row wrap
+    justify-content flex-start
+
+.input-inline
+  border 0
+  background-color transparent
+  line-height 1
+  &:focus
+    outline 0
+
+.dragzone-active
+  padding-bottom 2em
+
+.ghost
+  background-color #ffffff
+
+.flip-list-move
+  transition transform 0.5s
+
+.dialog-flat
+  .q-dialog__inner > div
+    min-width 300px
+    box-shadow none
+    overflow visible
+.check-list-list
+  padding-bottom 50px
+  & > *
+    margin-bottom (4em / $body-font-size)
+.check-list-item
+  background-color $white
+  cursor pointer
+  &__side
+    width (86em / $body-font-size)
+    min-height (86em / $body-font-size)
+    padding (26em / $body-font-size)
+    margin-right 1em
+    color $white
+  &__checkmark
+    font-size (32em / $body-font-size)!important
+    color $white
+  &__main
+    padding (8em / $body-font-size)
+  &__overline
+    text-transform uppercase
+    font-size (10em / $body-font-size)
+    font-weight 400
+    min-height 10px
+  &__title
+    font-weight 500
+    margin-top 0
+  &__meta
+    color $grey-6
+    display flex
+    flex-flow row wrap
+    align-items center
+  &--pending
+    .check-list-item__side
+      background-color $accent
+  &--due
+    .check-list-item__side
+      background-color $orange-8
+  &--overdue
+    .check-list-item__side
+      background-color $negative
+  &--done
+    opacity 0.85
+    .check-list-item__side
+      background-color $positive
+
+.check-list-header
+  background-color $white !important
+  cursor unset
+
+.check-list-entry-desc
+  min-height $body-font-size
+  white-space pre-line
+
+.list-entry-toolbar
+  background-color $secondary
+  overflow-y hidden
+  max-height 0
+  transition max-height 100ms ease-in
+  &--show
+    overflow-y auto
+    max-height 50px
+
+.btn-icon-text
+    line-height 1
+
+.text-white
+  color $white !important
