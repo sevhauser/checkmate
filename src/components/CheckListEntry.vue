@@ -30,7 +30,7 @@
       <q-item-section v-else>
         <q-item-label>
           <input
-            class="input-inline text-weight-medium text-body1"
+            class="input-inline text-weight-medium text-body1 full-width"
             :value="value.title"
             placeholder="Item Name"
             @input="valueChange('title', $event.target.value)"
