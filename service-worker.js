@@ -11,10 +11,10 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.2.0/workbox-sw.js");
+importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "precache-manifest.a5ac06ae24289efef9a4467a36562c43.js"
+  "precache-manifest.b2d098f010df561d93a80600bb95b419.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "checkmate"});
